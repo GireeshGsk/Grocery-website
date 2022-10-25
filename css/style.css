@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+:root{
+    --orange:rgb(243, 121, 14);
+    --black:rgb(18, 6, 49);
+    --blue:rgb(9, 9, 122);
+    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: none;
+    word-break: break-all;
+    text-decoration: none;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    background: rgb(238, 235, 235);
+  }
+  
+
+.header {
+    padding: 26px 10%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    left: 0; right: 0; top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.header .logo i{
+    color: var(--orange);
+}
+
+.header .logo span{
+    color: var(--orange);
+}
+
+.header .navbar a{
+    color: var(--black);
+    font-size: 18px;
+    margin: 13px;
+}
+
+.header .navbar a:hover{
+    color:var(--orange);
+}
+
+.header .icons div{
+    text-align: center;
+    margin-left: 22px;
+    font-size: 20px;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background-color: rgb(165, 164, 164);
+    color: var(--black);
+    cursor: pointer;
+}
+#menu-btn {
+    display: none;
+}
+
+.header .icons div:hover{
+    color: white; 
+    background: var(--orange);
+    
+}
+
+.btn{
+    color:var(--black);
+    margin-top: 1.5rem;
+    padding:11px 35px;
+    box-shadow: none;
+    font-size:medium;
+    border:2px solid var(--black);
+    border-radius:7px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+}
+
+.btn:hover{
+    color:white;
+    background: var(--orange);
+}
+
+.home {
+    display: flex;
+    padding-top: 91px;
+    margin: 0;
+    background: url(../image/banner-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.home .fresh {
+    text-align: center;
+    height: 366px;
+    width: 46%;
+}
+
+.home .fresh h2 {
+    font-size: 30px;
+    color: var(--black);
+    padding-top: 8rem;
+
+}
+
+.home .fresh h2 span {
+    color: var(--orange);
+
+}
+
+.home .fresh p {
+    color: rgb(104, 103, 103);
+    padding: 16px;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.heading {
+    color: var(--blue);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+@media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
